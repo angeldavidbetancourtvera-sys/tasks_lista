@@ -4,7 +4,7 @@ from .models import Task
 
 class TaskAdmin(admin.ModelAdmin):
     list_display = ('title', 'completed', 'created_at', 'updated_at')
-    list_filter = ('completed', 'created_at', 'updated_at')
+    list_filter = ('completed', 'created_at',)
     search_fields = ('title', 'description')
 # Register your models here.
 admin.site.register(Task,TaskAdmin)
