@@ -5,3 +5,7 @@ from .models import Task
 class TaskListView(ListView):
     model = Task
     template_name = 'task_list.html'
+    
+class TaskDetailView(ListView):
+    model = Task
+    template_name = 'task-detail.html'    
